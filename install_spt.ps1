@@ -163,6 +163,14 @@ if (Test-Path $FikaConfigPath) {
 }
 
 Write-Log "Installation script complete."
+
+# 9. Run Mod Installer if present
+$ModInstaller = Join-Path $PSScriptRoot "install_mods.ps1"
+if (Test-Path $ModInstaller) {
+    Write-Log "Found mod installer. Running install_mods.ps1..."
+    & $ModInstaller -InstallPath $InstallPath
+}
+
 Write-Log "Launching SPT Launcher..."
 $LauncherExe = Join-Path $InstallPath "SPT.Launcher.exe"
 Start-Process -FilePath $LauncherExe -WorkingDirectory $InstallPath

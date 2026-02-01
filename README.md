@@ -16,9 +16,9 @@
 
 ## Mod Installation Instructions
 
-1. Download mods.7z from GDrive
+1. Download mods.7z from [GDrive](https://drive.usercontent.google.com/download?id=1N_yhNEqL8Xm1_KCU3knIwpkL-C4tPemf&export=download&authuser=0&confirm=t&uuid=17b304a6-bf1b-4988-82f7-98c9b2492be4&at=APcXIO1sStdVreJhaEHcKBuM_qxg:1769989445011)
 2. Extract into root installation directory
-3. Copy configs from this repository 
+3. Copy configs from this repository but only overwrite the specific files described below, leave everything else untouched from step (1)
     - configs/questing_bots_config/config.json -> user/mods/DanW-SPTQuestingBots/config/config.json
     - configs/realism_config/config.json -> user/mods/SPT-Realism/config/config.json
     - configs/sain_config/* -> BepinEx/plugins/SAIN/
